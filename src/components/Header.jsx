@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import githubIcon from "../assets/images/svg/github-Icon.svg";
-import linkdinIcon from "../assets/images/svg/linkdin-Icon.svg";
+import githubIcon from "../assets/images/svg/github-icon.svg";
+import linkdinIcon from "../assets/images/svg/linkdin-icon.svg";
 import ankushPic from "../assets/images/png/Ankush.jpg";
 import openMenu from "../assets/images/svg/open.svg";
 import closeMenu from "../assets/images/svg/close.svg";

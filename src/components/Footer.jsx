@@ -1,6 +1,6 @@
 import React from "react";
-import githubIcon from "../assets/images/svg/github-Icon.svg";
-import linkdinIcon from "../assets/images/svg/linkdin-Icon.svg";
+import githubIcon from "../assets/images/svg/github-icon.svg";
+import linkdinIcon from "../assets/images/svg/linkdin-icon.svg";
 
 const Footer = () => {
   return (
