@@ -1,16 +1,16 @@
 const projectCardData = [
   {
     id: 1,
-    projectImg: "../src/assets/images/png/project-img.png",
+    projectImg: "../../assets/images/png/project-img.png",
     projectTitle: "project name",
     projectDetail:
       "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
     techStack: "Tech stack :",
     stackSkills: " HTML , JavaScript, SASS, React",
-    liveIcon: "../src/assets/images/svg/live-link-icon.svg",
+    liveIcon: "../../assets/images/svg/live-link-icon.svg",
     livePreview: "Live Preview",
     viewCode: "View Code",
-    smallGitIcon: "../src/assets/images/svg/github-small-icon.svg",
+    smallGitIcon: "../../assets/images/svg/github-small-icon.svg",
   },
   {
     id: 2,
