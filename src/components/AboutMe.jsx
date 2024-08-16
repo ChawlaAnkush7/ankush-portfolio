@@ -6,13 +6,16 @@ import buildingIcon from "../assets/images/svg/building-icon.svg";
 const AboutMe = () => {
   return (
     <>
-      <section id="about" className="my-[100px]">
+      <section
+        id="about"
+        className="lg:my-[100px] md:my-[60px] my-[40px] lg:py-10 py-6"
+      >
         <div className="container mx-auto px-4 md:px-10 lg:px-12 2xl:px-24">
           <div className="about-group">
-            <h2 className="font-poppins font-bold lg:text-xl text-[30px] text-heading-color text-center mb-4">
+            <h2 className="font-poppins font-bold lg:text-xl md:text-[40px] text-[30px] text-heading-color text-center mb-4">
               About Me
             </h2>
-            <p className="font-poppins text-link-color font-sm text-center md:max-w-[80%] mx-auto">
+            <p className="font-poppins text-link-color text-sm text-center md:max-w-[80%] mx-auto">
               Motivated Front-End Developer with strong skills in HTML, CSS,
               JavaScript, and React.js. Experienced in applying responsive
               design principles, proficient with Git, and adept in using
@@ -21,7 +24,7 @@ const AboutMe = () => {
             </p>
           </div>
           <div className="work-experience-group my-14">
-            <h2 className="font-poppins font-bold lg:text-lg text-[27px] mb-6 text-heading-color text-center">
+            <h2 className="font-poppins font-bold md:text-lg text-[27px] mb-6 text-heading-color text-center">
               Work Experience
             </h2>
             <div className="experience-card border-b border-light-grey pb-6 flex flex-col gap-2">
@@ -64,7 +67,7 @@ const AboutMe = () => {
             </div>
           </div>
           <div className="education-group">
-            <h2 className="font-poppins font-bold lg:text-lg text-[27px] mb-6 text-heading-color text-center">
+            <h2 className="font-poppins font-bold md:text-lg text-[27px] mb-6 text-heading-color text-center">
               Education
             </h2>
             <div className="graduation-group pb-6 mb-7 border-b border-light-grey">
@@ -183,7 +186,7 @@ const AboutMe = () => {
             </div>
           </div>
           <div className="certification-group mt-14">
-            <h2 className="font-poppins font-bold lg:text-lg text-[27px] mb-6 text-heading-color text-center">
+            <h2 className="font-poppins font-bold md:text-lg text-[27px] mb-6 text-heading-color text-center">
               Certifications
             </h2>
             <div className="certification-card border-b border-light-grey pb-6 mb-7">

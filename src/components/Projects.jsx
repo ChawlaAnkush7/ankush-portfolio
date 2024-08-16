@@ -4,7 +4,10 @@ import projectCardData from "./common/Helper";
 const Projects = () => {
   return (
     <>
-      <section id="projects" className="my-[100px] py-10">
+      <section
+        id="projects"
+        className="lg:my-[100px] md:my-[60px] my-[40px] lg:py-10 py-6"
+      >
         <div className="container px-4 md:px-10 lg:px-12 2xl:px-24 mx-auto">
           <h2 className="font-poppins font-bold lg:text-xl text-[30px] text-heading-color text-center mb-4">
             Projects
@@ -23,7 +26,7 @@ const Projects = () => {
                       className="w-full"
                     />
                     <div className="bg-white p-3 sm:p-4 lg:p-7 !pb-6 rounded-br-[20px] rounded-bl-[20px]">
-                      <h3 className="font-poppins font-medium lg:text-xlg text-[20px] text-black capitalize">
+                      <h3 className="font-poppins font-medium lg:text-xlg md:text-[25px] text-[20px] text-black capitalize">
                         {data.projectTitle}
                       </h3>
                       <p className="font-poppins font-light lg:text-xmd text-xsm mb-6 mt-4">

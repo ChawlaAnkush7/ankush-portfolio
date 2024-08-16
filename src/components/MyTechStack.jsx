@@ -12,7 +12,7 @@ import vercelIcon from "../assets/images/svg/vercel-icon.svg";
 const MyTechStack = () => {
   return (
     <>
-      <section id="techstack" className="py-10">
+      <section id="techstack" className="lg:py-10 py-6">
         <div className="container px-4 md:px-10 lg:px-12 2xl:px-24 mx-auto">
           <h2 className="font-poppins font-bold lg:text-xl text-[30px] text-heading-color text-center mb-4">
             My Tech Stack

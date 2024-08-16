@@ -10,6 +10,14 @@ const Header = () => {
   const handleMenu = () => {
     setOpen(!open);
   };
+  if (open === true) {
+    document.body.classList.add("max-lg:overflow-hidden");
+  } else {
+    document.body.classList.remove("max-lg:overflow-hidden");
+  }
+  const handleNavLinks = () => {
+    setOpen(!open);
+  };
   return (
     <>
       <header className=" w-full lg:min-h-screen min-h-[650px] flex flex-col ">
@@ -24,10 +32,11 @@ const Header = () => {
             <ul
               className={`${
                 open ? "left-0" : "left-[100%]"
-              } max-lg:flex-col max-lg:fixed max-lg:w-full  max-lg:top-0 max-lg:min-h-screen max-lg:bg-green-400 max-lg:justify-center max-lg:text-[25px] max-lg:items-center max-lg:gap-10  max-lg:z-[1] h-full flex gap-7 items-center text-link-color font-dm-sans font-medium transition-all duration-300 ease-linear `}
+              } max-lg:flex-col max-lg:fixed max-lg:w-full  max-lg:top-0 max-lg:min-h-screen max-lg:bg-logo-gradient-first max-lg:justify-center max-lg:text-[25px] max-lg:items-center max-lg:gap-10 max-lg:text-[white]  max-lg:z-[1] h-full flex gap-7 items-center text-link-color font-dm-sans font-medium transition-all duration-300 ease-linear `}
             >
               <li>
                 <a
+                  onClick={handleNavLinks}
                   href="/"
                   className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
@@ -36,6 +45,7 @@ const Header = () => {
               </li>
               <li>
                 <a
+                  onClick={handleNavLinks}
                   href="#about"
                   className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
@@ -44,6 +54,7 @@ const Header = () => {
               </li>
               <li>
                 <a
+                  onClick={handleNavLinks}
                   href="#techstack"
                   className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
@@ -52,6 +63,7 @@ const Header = () => {
               </li>
               <li>
                 <a
+                  onClick={handleNavLinks}
                   href="#projects"
                   className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
@@ -60,6 +72,7 @@ const Header = () => {
               </li>
               <li>
                 <a
+                  onClick={handleNavLinks}
                   href="#contact"
                   className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
@@ -69,7 +82,11 @@ const Header = () => {
               <li>
                 <ul className="flex items-center gap-5">
                   <li>
-                    <a href="">
+                    <a
+                      href="https://github.com/ChawlaAnkush7"
+                      target="_blank"
+                      onClick={handleNavLinks}
+                    >
                       <img
                         src={githubIcon}
                         alt="github-link"
@@ -78,7 +95,11 @@ const Header = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a
+                      href="https://www.linkedin.com/in/ankush-chawla-784141272/"
+                      target="_blank"
+                      onClick={handleNavLinks}
+                    >
                       <img
                         src={linkdinIcon}
                         alt="linkdin-link"
@@ -101,7 +122,7 @@ const Header = () => {
           <div className="container mx-auto px-4 md:px-10 lg:px-12 2xl:px-24 flex">
             <div className="grid grid-cols-1 sm:grid-cols-12  gap-6 items-center w-full">
               <div className="hero-left-col sm:col-span-7 order-2 sm:order-1 ">
-                <h1 className="font-poppins font-bold lg:text-2xl text-[35px] md:text-[45px] text-heading-color text-center sm:text-start">
+                <h1 className="font-poppins font-bold lg:text-2xl md:text-[50px] text-[35px]  text-heading-color text-center sm:text-start">
                   <span className="sm:block"> Hi 👋,</span>
                   <span className="sm:block"> My name is </span>
                   <span className="sm:block bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second bg-clip-text text-transparent">

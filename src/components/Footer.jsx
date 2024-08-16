@@ -21,12 +21,15 @@ const Footer = () => {
               </a>
               <ul className="flex items-center gap-5">
                 <li>
-                  <a href="">
+                  <a href="https://github.com/ChawlaAnkush7" target="_blank">
                     <img src={githubIcon} alt="github-link" />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a
+                    href="https://www.linkedin.com/in/ankush-chawla-784141272/"
+                    target="_blank"
+                  >
                     <img src={linkdinIcon} alt="linkdin-link" />
                   </a>
                 </li>
