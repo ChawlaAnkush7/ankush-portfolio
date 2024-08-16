@@ -38,7 +38,7 @@ const Header = () => {
                 <a
                   onClick={handleNavLinks}
                   href="/"
-                  className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
+                  className="relative after:absolute after:w-0 after:h-[2px] max-lg:after:bg-white lg:after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
                   Home
                 </a>
@@ -47,7 +47,7 @@ const Header = () => {
                 <a
                   onClick={handleNavLinks}
                   href="#about"
-                  className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
+                  className="relative after:absolute after:w-0 after:h-[2px] max-lg:after:bg-white lg:after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
                   About
                 </a>
@@ -56,7 +56,7 @@ const Header = () => {
                 <a
                   onClick={handleNavLinks}
                   href="#techstack"
-                  className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
+                  className="relative after:absolute after:w-0 after:h-[2px] max-lg:after:bg-white lg:after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
                   Tech Stack
                 </a>
@@ -65,7 +65,7 @@ const Header = () => {
                 <a
                   onClick={handleNavLinks}
                   href="#projects"
-                  className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
+                  className="relative after:absolute after:w-0 after:h-[2px] max-lg:after:bg-white lg:after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
                   Projects
                 </a>
@@ -74,7 +74,7 @@ const Header = () => {
                 <a
                   onClick={handleNavLinks}
                   href="#contact"
-                  className="relative after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
+                  className="relative after:absolute after:w-0 after:h-[2px] max-lg:after:bg-white lg:after:bg-gradient-to-r from-logo-gradient-first to-logo-gradient-second after:left-0 after:bottom-0 hover:after:w-full after:transition-all after:duration-300 after:ease-linear"
                 >
                   Contact
                 </a>
@@ -86,11 +86,12 @@ const Header = () => {
                       href="https://github.com/ChawlaAnkush7"
                       target="_blank"
                       onClick={handleNavLinks}
+                      className="hover:translate-y-1"
                     >
                       <img
                         src={githubIcon}
                         alt="github-link"
-                        className="w-full"
+                        className="w-full hover:scale-[1.2] transition-all duration-300 ease-linear"
                       />
                     </a>
                   </li>
@@ -103,7 +104,7 @@ const Header = () => {
                       <img
                         src={linkdinIcon}
                         alt="linkdin-link"
-                        className="w-full h-[30px]"
+                        className="w-full hover:scale-[1.2] transition-all duration-300 ease-linear"
                       />
                     </a>
                   </li>

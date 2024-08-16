@@ -22,7 +22,11 @@ const Footer = () => {
               <ul className="flex items-center gap-5">
                 <li>
                   <a href="https://github.com/ChawlaAnkush7" target="_blank">
-                    <img src={githubIcon} alt="github-link" />
+                    <img
+                      src={githubIcon}
+                      alt="github-link"
+                      className="hover:scale-[1.2] transition-all duration-300 ease-linear"
+                    />
                   </a>
                 </li>
                 <li>
@@ -30,7 +34,11 @@ const Footer = () => {
                     href="https://www.linkedin.com/in/ankush-chawla-784141272/"
                     target="_blank"
                   >
-                    <img src={linkdinIcon} alt="linkdin-link" />
+                    <img
+                      src={linkdinIcon}
+                      alt="linkdin-link"
+                      className="hover:scale-[1.2] transition-all duration-300 ease-linear"
+                    />
                   </a>
                 </li>
               </ul>
